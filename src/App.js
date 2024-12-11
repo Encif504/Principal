@@ -14,13 +14,16 @@ import port1 from './images/sample.jpg'
    const  _About="About";
     const _Work="Work";
    const  _Contact="Contact";
+   const hello=()=>{
+    console.log("Hello world")
+   }
 
    
   
   return(
     <div className='App'>
       
-      <nav className='pt-7 flex gap-5 shadow-xl shadow-green-400 bg-slate-800 pb-3'>
+      <nav className='pl-10 pr-10 pt-7 flex justify-around shadow-xl shadow-green-400 bg-slate-800 pb-3'>
       <p className='flex text-4xl animate-pulse duration-300  leading-tight text-white'>{myname}</p>
         <a className=' text-white bg-green-600' href='#'>{_service}</a>
         <a className='text-white' href='#'>{_process}</a>
@@ -28,23 +31,19 @@ import port1 from './images/sample.jpg'
         <a className='text-white' href='#'>{_Work}</a>
         <a className='text-white' href='#'>{_Contact}</a>
       </nav>
-      <br>
-      </br>
-      <div className='flex flex-row gap-10 pt-7'>
-        <div className='border-green-700 w-6/12'>
-        <p className='text-center' >GET IN TOUCH</p>
-        
-        <input type='text' className='float-end text-left placeholder-green-700' placeholder='Enter your Name'></input>
-          <img className='rounded size-32' src={port1} alt='sample'></img>
-          <input type='email' className='hover:required:'placeholder='email'></input>
+
+      <br></br>
+      
+      <div className='flex'>
+        <div className='w-1/2 bg-gradient-to-br from-slate-500 to-green-400'>
+          <p className='text-center uppercase font-bold text-3xl'>here we are</p>
+          <br></br>
         </div>
-       
-        <div className=' grid-cols-4'>
-          <img className='rounded size-52' src={port1} alt='sample'></img>
+        <div className='w-1/2'>
+          <p className='text-center uppercase font-bold text-3xl'>we are you</p>
         </div>
-      </div>
- 
      
+        </div>
         </div>
         
      
@@ -58,11 +57,6 @@ import port1 from './images/sample.jpg'
 
     
    
-  )
+  );
 }
 export default App;
-
-
-
-
-

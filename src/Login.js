@@ -5,8 +5,8 @@ const AuthForm = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center text-gray-800">
+      <div className="w-full max-w-md p-6 bg-gradient-to-br from bg-cyan-500 to bg-green-500 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold text-center text-black">
           {isLogin ? "Login" : "Register"}
         </h2>
         <form className="mt-6">
@@ -14,7 +14,7 @@ const AuthForm = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+                className="block text-sm font-medium text-black"
               >
                 Full Name
               </label>

@@ -1,59 +1,45 @@
-import React, {useState} from 'react';
-import LoginPage from "./Login"
+import React, { useState, useEffect } from "react";
+import ReactDOM  from "react-dom";
+import logoo from "./images/logo2.jpg";
+import bgimage from "./images/me.jpeg";
+import Animatiotyping from "./TypingAnimation";
 
+function App(){
 
-import me from './images/me.jpeg'
-
-
-
-
+  const backgroundStyle={backgroundImage:"url('./images/logo2.jpg')"};
  
-  function App(){
-    const myname='SAMUEL SIFUNA';
-    const _service="Service";
-   const  _process="Process";
-   const  _About="About";
-    const _Work="Work";
-   const  _Contact="Contact";
-   const hello=()=>{
-    console.log("Hello world")
-   }
 
-   
-  
   return(
-    <div className='App'>
-      
-      <nav className='pl-10 pr-10 pt-7 flex justify-around shadow-xl shadow-green-400 bg-slate-800 pb-3'>
-      <p className='flex text-4xl animate-pulse duration-300  leading-tight text-white'>{myname}</p>
-        <a className=' text-white ' href='Login.js'>{_service}</a>
-        <a className='text-white' href='#'>{_process}</a>
-        <a className='text-white' href='#'>{_About}</a>
-        <a className='text-white' href='#'>{_Work}</a>
-        <a className='text-white' href='#'>{_Contact}</a>
-      </nav>
-
-      <br></br>
-      
-      
+    <div className="App p-1">
+      <div className="flex  pt-8 rounded-md justify-between shadow-xl pb-3">
+        <img className=" ml-2 size-20 rounded-full mb-2" src={logoo}></img>
+        <div className="flex gap-6 float-right max-h-fit text-white font tracking-wider bg-slate-900 pt-6 rounded-2xl pr-10 font-extrabold pl-10 mr-8" >
+          <p className=" hover:bg-green-500">LIST</p>
+          <p className="">|</p>
+          <p className="">RECORDS</p>
+        </div>
+        </div>
+        <div className=" flex font-bold text-4xl">
+        <Animatiotyping  speed={800} />
         
-        <div>
-        <LoginPage />
-          </div>
-        
+        <div className="">
+          <label className=""></label>
+          <input type="text" placeholder="Jonh"></input>
+        </div>
         </div>
         
      
-     
-    
-     
+        
+        
       
-  
+     
+       
+        
+     
+       
+       
 
-  
-
-    
-   
-  );
+    </div>
+  )
 }
 export default App;

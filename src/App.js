@@ -23,9 +23,7 @@ function App(){
     setTarget1(parseInt(event.target.value));
   }
   const [topValue,setMinus]=useState=(0);
-  const handleMinus=()=>{
-    
-  }
+  
   
   const [maxNumber,setReduce]=useState('0');
   
